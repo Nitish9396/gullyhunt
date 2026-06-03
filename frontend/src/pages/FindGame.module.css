@@ -1,0 +1,257 @@
+.page {
+  padding: 76px 16px 20px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.header { margin-bottom: 20px; }
+
+.h1 {
+  font-size: clamp(28px, 6vw, 42px);
+  margin-top: 6px;
+}
+
+.filters {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.citySelect {
+  width: 100%;
+  max-width: 240px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.chip {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  text-transform: capitalize;
+  transition: 0.15s;
+}
+
+.chip:hover {
+  border-color: var(--neon);
+  color: var(--neon);
+}
+
+.chipActive {
+  background: var(--neon);
+  color: #000;
+  border-color: var(--neon);
+}
+
+.results {}
+
+.resultsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.count {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--muted);
+}
+
+.refreshBtn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.refreshBtn:hover {
+  border-color: var(--neon);
+  color: var(--neon);
+}
+
+.grid {
+  display: grid;
+  gap: 14px;
+}
+
+.loadingGrid {
+  display: grid;
+  gap: 14px;
+}
+
+.skeleton {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  height: 130px;
+  animation: shimmer 1.4s infinite;
+}
+
+@keyframes shimmer {
+  0%,100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.empty {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.emptyIcon {
+  font-size: 52px;
+  margin-bottom: 16px;
+}
+
+.empty h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.empty p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* MAP COMING SOON */
+.mapComingSoon {
+  margin-bottom: 28px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.mapMock {
+  position: relative;
+  height: 300px;
+  background: #0d0d18;
+  overflow: hidden;
+}
+
+.mapGrid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(182,255,0,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(182,255,0,0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.mockRoad {
+  position: absolute;
+  background: rgba(182,255,0,0.08);
+  border-radius: 2px;
+}
+
+.mockPin {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-50%, -100%);
+  z-index: 2;
+}
+
+.pinBubble {
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #000;
+  white-space: nowrap;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.pinTail {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid;
+}
+
+.mapOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10,10,15,0.82);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.mapOverlayContent {
+  text-align: center;
+  padding: 20px;
+}
+
+.comingSoonBadge {
+  display: inline-block;
+  background: rgba(182,255,0,0.1);
+  border: 1px solid rgba(182,255,0,0.3);
+  color: var(--neon);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 5px 16px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.mapOverlayTitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.mapOverlayDesc {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.mapFeatures {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mapFeatures span {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+}

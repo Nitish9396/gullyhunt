@@ -1,0 +1,264 @@
+.page {
+  padding: 76px 16px 24px;
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* GUEST */
+.guestPage {
+  padding: 120px 20px 40px;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.guestIcon {
+  font-size: 64px;
+  margin-bottom: 8px;
+}
+
+.guestTitle {
+  font-size: 32px;
+}
+
+.guestSub {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.btnNeon {
+  width: 100%;
+  padding: 14px;
+  background: var(--neon);
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.btnNeon:hover {
+  background: #c8ff00;
+  transform: translateY(-1px);
+}
+
+.btnOutline {
+  width: 100%;
+  padding: 14px;
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btnOutline:hover {
+  border-color: var(--neon);
+  color: var(--neon);
+}
+
+/* PROFILE HEADER */
+.header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(182,255,0,0.12);
+  border: 2px solid rgba(182,255,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--neon);
+  flex-shrink: 0;
+}
+
+.name {
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+
+.role {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.city {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* STATS */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.statCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 12px;
+  text-align: center;
+}
+
+.statNum {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.statLabel {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+/* INFO CARD */
+.infoCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.cardTitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 14px;
+  color: var(--text);
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.infoRow:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.infoLabel {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.infoVal {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* SPORTS */
+.sportsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sportChip {
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  background: transparent;
+  text-transform: capitalize;
+}
+
+.sportActive {
+  background: rgba(182,255,0,0.1);
+  color: var(--neon);
+  border-color: rgba(182,255,0,0.3);
+}
+
+/* ACTIONS */
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.postBtn {
+  width: 100%;
+  padding: 14px;
+  background: var(--neon);
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.postBtn:hover {
+  background: #c8ff00;
+  transform: translateY(-1px);
+}
+
+.findBtn {
+  width: 100%;
+  padding: 14px;
+  background: transparent;
+  color: var(--text);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.findBtn:hover {
+  border-color: var(--neon);
+  color: var(--neon);
+}
+
+.logoutBtn {
+  width: 100%;
+  padding: 14px;
+  background: transparent;
+  color: var(--pink);
+  border: 1.5px solid var(--pink);
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.logoutBtn:hover {
+  background: rgba(255,61,127,0.08);
+}
