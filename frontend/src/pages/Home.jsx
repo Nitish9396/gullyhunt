@@ -190,190 +190,192 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CITIES SECTION */}
-      <section className={styles.citiesSection}>
-        <div className={styles.citiesInner}>
-          <div className="section-tag">Coverage</div>
-          <h2 className={`heading ${styles.sectionH}`}>
-            Games Happening Across India
-          </h2>
-          <p className={styles.sectionS}>
-            From Kashmir to Kanyakumari — GullyHunt is everywhere
-          </p>
-
-          <div className={styles.indiaMap}>
+      <div className={styles.indiaMap}>
   <svg
-    viewBox="0 0 500 560"
+    viewBox="0 0 550 620"
     width="100%"
     height="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
-    {/* INDIA - Accurate outline */}
+    {/* ACCURATE INDIA OUTLINE */}
     <path
       fill="rgba(200,255,0,0.06)"
-      stroke="rgba(200,255,0,0.3)"
-      strokeWidth="1.8"
+      stroke="rgba(200,255,0,0.35)"
+      strokeWidth="2"
       strokeLinejoin="round"
-      d="
-        M233,28 L244,24 L256,22 L268,24 L280,28 L292,34
-        L302,42 L310,50 L316,58 L320,66 L326,70 L334,72
-        L340,76 L344,84 L340,92 L334,98 L328,104 L326,112
-        L330,122 L336,132 L342,144 L346,156 L349,168
-        L351,180 L353,192 L356,202 L360,212 L364,222
-        L366,232 L364,242 L359,250 L352,257 L344,264
-        L336,272 L329,281 L322,291 L315,302 L308,313
-        L301,324 L294,335 L287,346 L280,356 L273,365
-        L266,373 L259,380 L252,386 L246,392 L240,386
-        L234,378 L228,369 L222,359 L216,349 L210,339
-        L204,329 L198,319 L192,309 L186,299 L180,289
-        L174,279 L168,269 L162,259 L157,249 L152,239
-        L148,229 L144,219 L141,209 L138,198 L136,187
-        L134,176 L133,165 L132,154 L132,143 L133,132
-        L135,121 L138,111 L143,101 L149,92 L156,83
-        L164,75 L173,68 L183,62 L193,57 L203,52
-        L213,47 L222,42 L229,36 Z
-      "
+      d="M258,30 L266,26 L275,24 L285,24 L295,26 L305,30
+         L315,36 L323,44 L329,52 L333,60 L337,66 L343,70
+         L351,72 L358,76 L363,82 L364,90 L360,98 L354,104
+         L348,110 L344,118 L346,128 L350,138 L356,150
+         L361,162 L365,175 L368,188 L370,200 L372,212
+         L374,224 L376,234 L378,244 L378,254 L374,263
+         L368,271 L360,278 L352,286 L344,295 L337,305
+         L330,316 L323,327 L316,338 L309,350 L302,361
+         L295,372 L288,382 L281,391 L274,399 L267,406
+         L260,412 L253,406 L246,397 L239,387 L232,376
+         L225,365 L218,354 L211,343 L204,332 L197,321
+         L190,310 L183,299 L177,288 L171,277 L165,266
+         L160,255 L155,244 L151,233 L148,222 L145,211
+         L143,200 L141,189 L140,178 L139,167 L139,156
+         L140,145 L142,134 L145,124 L149,114 L154,105
+         L160,96 L167,88 L175,81 L184,75 L193,70
+         L203,65 L213,61 L223,57 L233,53 L242,49
+         L250,44 L255,38 Z"
     />
-    {/* Kashmir */}
+
+    {/* KASHMIR */}
     <path
       fill="rgba(200,255,0,0.06)"
       stroke="rgba(200,255,0,0.3)"
       strokeWidth="1.5"
       strokeLinejoin="round"
-      d="M233,28 L229,36 L222,42 L214,36 L207,28
-         L210,20 L218,14 L228,12 L238,14 L246,20
-         L244,24 Z"
+      d="M258,30 L255,38 L250,44 L242,49 L235,44
+         L228,38 L222,30 L225,22 L233,16 L243,13
+         L253,14 L261,18 L266,26 Z"
     />
-    {/* Andaman Islands */}
-    <ellipse cx="400" cy="320" rx="6" ry="18"
+
+    {/* NORTHEAST STATES */}
+    <path
+      fill="rgba(200,255,0,0.06)"
+      stroke="rgba(200,255,0,0.25)"
+      strokeWidth="1.5"
+      strokeLinejoin="round"
+      d="M370,200 L380,194 L392,190 L404,188 L414,192
+         L418,200 L414,210 L404,216 L392,218 L380,214
+         L372,212 Z"
+    />
+
+    {/* ANDAMAN ISLANDS */}
+    <ellipse cx="450" cy="380" rx="7" ry="22"
       fill="rgba(200,255,0,0.04)"
-      stroke="rgba(200,255,0,0.2)" strokeWidth="1"/>
-    {/* Sri Lanka */}
-    <ellipse cx="272" cy="468" rx="10" ry="16"
+      stroke="rgba(200,255,0,0.2)" strokeWidth="1.2"/>
+
+    {/* SRI LANKA */}
+    <ellipse cx="295" cy="520" rx="12" ry="20"
       fill="rgba(200,255,0,0.03)"
       stroke="rgba(200,255,0,0.15)" strokeWidth="1"/>
 
-    {/* MUMBAI */}
-    <circle cx="152" cy="278" r="18" fill="none"
-      stroke="#c8ff00" strokeWidth="0.8"
+    {/* ====== MAJOR CITIES ====== */}
+
+    {/* MUMBAI - West coast middle */}
+    <circle cx="168" cy="310" r="20" fill="none"
+      stroke="rgba(200,255,0,0.5)" strokeWidth="1"
       style={{animation:"ringpulse 3s 0s infinite"}}/>
-    <circle cx="152" cy="278" r="7" fill="#c8ff00"
+    <circle cx="168" cy="310" r="7" fill="#c8ff00"
       style={{animation:"dotpulse 3s 0s infinite"}}/>
-    <text x="166" y="283" fontFamily="'Barlow Condensed',sans-serif"
-      fontSize="14" fontWeight="700"
-      fill="rgba(200,255,0,0.95)">MUMBAI</text>
+    <text x="182" y="315" fontFamily="'Barlow Condensed',sans-serif"
+      fontSize="15" fontWeight="700" fill="#c8ff00">MUMBAI</text>
 
-    {/* DELHI */}
-    <circle cx="224" cy="118" r="18" fill="none"
-      stroke="#c8ff00" strokeWidth="0.8"
-      style={{animation:"ringpulse 3s 0.5s infinite"}}/>
-    <circle cx="224" cy="118" r="7" fill="#c8ff00"
-      style={{animation:"dotpulse 3s 0.5s infinite"}}/>
-    <text x="238" y="123" fontFamily="'Barlow Condensed',sans-serif"
-      fontSize="14" fontWeight="700"
-      fill="rgba(200,255,0,0.95)">DELHI</text>
+    {/* DELHI - North center */}
+    <circle cx="262" cy="138" r="20" fill="none"
+      stroke="rgba(200,255,0,0.5)" strokeWidth="1"
+      style={{animation:"ringpulse 3s 0.6s infinite"}}/>
+    <circle cx="262" cy="138" r="7" fill="#c8ff00"
+      style={{animation:"dotpulse 3s 0.6s infinite"}}/>
+    <text x="276" y="143" fontFamily="'Barlow Condensed',sans-serif"
+      fontSize="15" fontWeight="700" fill="#c8ff00">DELHI</text>
 
-    {/* BENGALURU */}
-    <circle cx="236" cy="388" r="18" fill="none"
-      stroke="#c8ff00" strokeWidth="0.8"
+    {/* KOLKATA - East */}
+    <circle cx="362" cy="248" r="20" fill="none"
+      stroke="rgba(200,255,0,0.5)" strokeWidth="1"
       style={{animation:"ringpulse 3s 1s infinite"}}/>
-    <circle cx="236" cy="388" r="7" fill="#c8ff00"
+    <circle cx="362" cy="248" r="7" fill="#c8ff00"
       style={{animation:"dotpulse 3s 1s infinite"}}/>
-    <text x="250" y="393" fontFamily="'Barlow Condensed',sans-serif"
-      fontSize="14" fontWeight="700"
-      fill="rgba(200,255,0,0.95)">BENGALURU</text>
+    <text x="376" y="253" fontFamily="'Barlow Condensed',sans-serif"
+      fontSize="15" fontWeight="700" fill="#c8ff00">KOLKATA</text>
 
-    {/* KOLKATA */}
-    <circle cx="322" cy="218" r="18" fill="none"
-      stroke="#c8ff00" strokeWidth="0.8"
-      style={{animation:"ringpulse 3s 1.5s infinite"}}/>
-    <circle cx="322" cy="218" r="7" fill="#c8ff00"
-      style={{animation:"dotpulse 3s 1.5s infinite"}}/>
-    <text x="336" y="223" fontFamily="'Barlow Condensed',sans-serif"
-      fontSize="14" fontWeight="700"
-      fill="rgba(200,255,0,0.95)">KOLKATA</text>
+    {/* BENGALURU - South */}
+    <circle cx="272" cy="430" r="20" fill="none"
+      stroke="rgba(200,255,0,0.5)" strokeWidth="1"
+      style={{animation:"ringpulse 3s 1.4s infinite"}}/>
+    <circle cx="272" cy="430" r="7" fill="#c8ff00"
+      style={{animation:"dotpulse 3s 1.4s infinite"}}/>
+    <text x="286" y="435" fontFamily="'Barlow Condensed',sans-serif"
+      fontSize="15" fontWeight="700" fill="#c8ff00">BENGALURU</text>
 
-    {/* CHENNAI */}
-    <circle cx="258" cy="418" r="18" fill="none"
-      stroke="#c8ff00" strokeWidth="0.8"
+    {/* CHENNAI - Southeast */}
+    <circle cx="300" cy="462" r="20" fill="none"
+      stroke="rgba(200,255,0,0.5)" strokeWidth="1"
       style={{animation:"ringpulse 3s 2s infinite"}}/>
-    <circle cx="258" cy="418" r="7" fill="#c8ff00"
+    <circle cx="300" cy="462" r="7" fill="#c8ff00"
       style={{animation:"dotpulse 3s 2s infinite"}}/>
-    <text x="272" y="423" fontFamily="'Barlow Condensed',sans-serif"
-      fontSize="14" fontWeight="700"
-      fill="rgba(200,255,0,0.95)">CHENNAI</text>
+    <text x="314" y="467" fontFamily="'Barlow Condensed',sans-serif"
+      fontSize="15" fontWeight="700" fill="#c8ff00">CHENNAI</text>
 
     {/* HYDERABAD */}
-    <circle cx="248" cy="330" r="5" fill="#c8ff00" opacity="0.6"
+    <circle cx="280" cy="368" r="6" fill="#c8ff00" opacity="0.65"
       style={{animation:"dotpulse 3s 0.8s infinite"}}/>
-    <text x="256" y="334" fontFamily="'Barlow Condensed',sans-serif"
-      fontSize="10" fontWeight="700"
-      fill="rgba(200,255,0,0.6)">HYDERABAD</text>
+    <text x="290" y="372" fontFamily="'Barlow Condensed',sans-serif"
+      fontSize="11" fontWeight="700" fill="rgba(200,255,0,0.7)">HYDERABAD</text>
 
     {/* PUNE */}
-    <circle cx="168" cy="298" r="5" fill="#c8ff00" opacity="0.6"
+    <circle cx="192" cy="332" r="6" fill="#c8ff00" opacity="0.65"
       style={{animation:"dotpulse 3s 1.2s infinite"}}/>
+    <text x="202" y="336" fontFamily="'Barlow Condensed',sans-serif"
+      fontSize="11" fontWeight="700" fill="rgba(200,255,0,0.7)">PUNE</text>
 
     {/* AHMEDABAD */}
-    <circle cx="162" cy="208" r="5" fill="#c8ff00" opacity="0.6"
+    <circle cx="192" cy="248" r="6" fill="#c8ff00" opacity="0.65"
       style={{animation:"dotpulse 3s 1.8s infinite"}}/>
-    <text x="170" y="212" fontFamily="'Barlow Condensed',sans-serif"
-      fontSize="10" fontWeight="700"
-      fill="rgba(200,255,0,0.6)">AHMEDABAD</text>
+    <text x="202" y="252" fontFamily="'Barlow Condensed',sans-serif"
+      fontSize="11" fontWeight="700" fill="rgba(200,255,0,0.7)">AHMEDABAD</text>
 
     {/* JAIPUR */}
-    <circle cx="196" cy="148" r="5" fill="#c8ff00" opacity="0.6"
+    <circle cx="238" cy="178" r="6" fill="#c8ff00" opacity="0.65"
       style={{animation:"dotpulse 3s 2.2s infinite"}}/>
+    <text x="248" y="182" fontFamily="'Barlow Condensed',sans-serif"
+      fontSize="11" fontWeight="700" fill="rgba(200,255,0,0.7)">JAIPUR</text>
 
     {/* LUCKNOW */}
-    <circle cx="262" cy="158" r="5" fill="#c8ff00" opacity="0.6"
-      style={{animation:"dotpulse 3s 0.3s infinite"}}/>
+    <circle cx="308" cy="198" r="6" fill="#c8ff00" opacity="0.65"
+      style={{animation:"dotpulse 3s 0.4s infinite"}}/>
+    <text x="318" y="202" fontFamily="'Barlow Condensed',sans-serif"
+      fontSize="11" fontWeight="700" fill="rgba(200,255,0,0.7)">LUCKNOW</text>
 
     {/* NAGPUR */}
-    <circle cx="244" cy="258" r="5" fill="#c8ff00" opacity="0.6"
+    <circle cx="290" cy="298" r="6" fill="#c8ff00" opacity="0.65"
       style={{animation:"dotpulse 3s 1.6s infinite"}}/>
 
     {/* BHOPAL */}
-    <circle cx="218" cy="218" r="5" fill="#c8ff00" opacity="0.6"
-      style={{animation:"dotpulse 3s 0.7s infinite"}}/>
-
-    {/* KOCHI */}
-    <circle cx="208" cy="432" r="5" fill="#c8ff00" opacity="0.6"
-      style={{animation:"dotpulse 3s 2.4s infinite"}}/>
-
-    {/* PATNA */}
-    <circle cx="284" cy="178" r="5" fill="#c8ff00" opacity="0.6"
-      style={{animation:"dotpulse 3s 1.1s infinite"}}/>
-
-    {/* SURAT */}
-    <circle cx="154" cy="238" r="5" fill="#c8ff00" opacity="0.6"
-      style={{animation:"dotpulse 3s 0.6s infinite"}}/>
+    <circle cx="258" cy="258" r="6" fill="#c8ff00" opacity="0.65"
+      style={{animation:"dotpulse 3s 0.9s infinite"}}/>
 
     {/* CHANDIGARH */}
-    <circle cx="210" cy="98" r="5" fill="#c8ff00" opacity="0.6"
-      style={{animation:"dotpulse 3s 1.4s infinite"}}/>
+    <circle cx="255" cy="108" r="6" fill="#c8ff00" opacity="0.65"
+      style={{animation:"dotpulse 3s 1.3s infinite"}}/>
+
+    {/* KOCHI */}
+    <circle cx="238" cy="480" r="6" fill="#c8ff00" opacity="0.65"
+      style={{animation:"dotpulse 3s 2.4s infinite"}}/>
+
+    {/* SURAT */}
+    <circle cx="185" cy="278" r="6" fill="#c8ff00" opacity="0.65"
+      style={{animation:"dotpulse 3s 0.5s infinite"}}/>
+
+    {/* PATNA */}
+    <circle cx="330" cy="218" r="6" fill="#c8ff00" opacity="0.65"
+      style={{animation:"dotpulse 3s 1.1s infinite"}}/>
 
     {/* VISAKHAPATNAM */}
-    <circle cx="298" cy="318" r="5" fill="#c8ff00" opacity="0.6"
+    <circle cx="338" cy="358" r="6" fill="#c8ff00" opacity="0.65"
       style={{animation:"dotpulse 3s 1.9s infinite"}}/>
+
+    {/* INDORE */}
+    <circle cx="240" cy="238" r="6" fill="#c8ff00" opacity="0.65"
+      style={{animation:"dotpulse 3s 2.1s infinite"}}/>
   </svg>
 
   <style>{`
     @keyframes dotpulse {
-      0%,100% { opacity: 1; }
-      50% { opacity: 0.2; }
+      0%,100% { opacity:1; }
+      50% { opacity:0.2; }
     }
     @keyframes ringpulse {
-      0% { r: 10; opacity: 0.8; }
-      100% { r: 26; opacity: 0; }
+      0% { r:10; opacity:0.8; stroke-width:1.5; }
+      100% { r:28; opacity:0; stroke-width:0.3; }
     }
   `}</style>
 </div>
-
-          <span className={styles.citiesCount}>180+</span>
-          <p className={styles.citiesSub}>Cities with active games right now</p>
-        </div>
-      </section>
 
       {/* HOW IT WORKS */}
       <section
