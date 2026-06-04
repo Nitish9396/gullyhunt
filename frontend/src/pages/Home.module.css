@@ -1,4 +1,7 @@
-.page { padding-top: 58px; }
+.page {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 /* HERO */
 .hero {
@@ -366,12 +369,16 @@
 
 .indiaMap {
   width: 100%;
-  height: 700px;
+  min-height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
+}
+.mapSection {
+  padding: 80px 0;
+  background: #0a0a0a;
 }
 
 .citiesCount {
@@ -679,4 +686,19 @@
     rgba(6,6,8,0.7) 50%,
     rgba(6,6,8,0.9) 100%
   );
+}
+@keyframes ringpulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+@keyframes dotpulse {
+  0%,100% { opacity: 1; }
+  50% { opacity: 0.3; }
 }
