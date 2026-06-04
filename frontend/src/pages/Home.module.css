@@ -365,11 +365,13 @@
 }
 
 .indiaMap {
-  margin: 28px auto;
-  position: relative;
   width: 100%;
-  max-width: 420px;
-  height: 500px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .citiesCount {

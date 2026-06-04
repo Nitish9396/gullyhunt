@@ -192,11 +192,14 @@ export default function Home() {
 
       <div className={styles.indiaMap}>
   <svg
-    viewBox="0 0 550 620"
-    width="100%"
-    height="100%"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+  viewBox="0 0 550 620"
+  style={{
+    width: "100%",
+    height: "auto",
+    maxHeight: "700px",
+  }}
+  xmlns="http://www.w3.org/2000/svg"
+>
     {/* ACCURATE INDIA OUTLINE */}
     <path
       fill="rgba(200,255,0,0.06)"
