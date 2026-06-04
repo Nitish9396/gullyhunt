@@ -702,3 +702,31 @@
   0%,100% { opacity: 1; }
   50% { opacity: 0.3; }
 }
+
+.heroBgAnimated {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 15% 40%, rgba(200,255,0,0.12) 0%, transparent 45%),
+    radial-gradient(ellipse at 85% 20%, rgba(61,142,248,0.1) 0%, transparent 45%),
+    radial-gradient(ellipse at 50% 85%, rgba(255,92,26,0.08) 0%, transparent 45%),
+    linear-gradient(160deg, #080f05 0%, #060608 45%, #06060f 100%);
+  animation: bgpulse 6s ease-in-out infinite alternate;
+}
+
+@keyframes bgpulse {
+  0% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+.mapSection {
+  padding: 40px 0;
+}
+
+.indiaMap {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
