@@ -2,6 +2,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import { AuthProvider } from "./context/AuthContext";
 
+import Scorecard from "./pages/Scorecard";
+import LiveScorecard from "./pages/LiveScorecard";
+import ViewScorecard from "./pages/ViewScorecard";
+
 import Navbar from "./components/Navbar";
 import BottomNav from "./components/BottomNav";
 import Home from "./pages/Home";
@@ -44,6 +48,9 @@ function App() {
             <Route path="/profile" element={<Profile />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/scorecard" element={<Scorecard />} />
+            <Route path="/scorecard/live/:code" element={<LiveScorecard />} />
+            <Route path="/scorecard/view/:code" element={<ViewScorecard />} />
           </Routes>
         </main>
         <BottomNav />

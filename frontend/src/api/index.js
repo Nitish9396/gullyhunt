@@ -29,3 +29,9 @@ export const updateMatch = (id, data) => API.put(`/matches/${id}`, data);
 export const deleteMatch = (id) => API.delete(`/matches/${id}`);
 
 export default API;
+// Scorecard APIs
+export const createScorecard = (data) => API.post("/scorecard", data);
+export const getScorecardByCode = (code) => API.get(`/scorecard/${code}`);
+export const addBall = (code, data) => API.post(`/scorecard/${code}/ball`, data);
+export const startInnings2 = (code) => API.post(`/scorecard/${code}/start-innings2`);
+export const getMyScores = () => API.get("/scorecard/my");

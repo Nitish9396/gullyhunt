@@ -1,0 +1,349 @@
+.page {
+  padding: 76px 16px 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(28px, 6vw, 42px);
+  font-weight: 900;
+  margin: 6px 0 6px;
+}
+
+.sub {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+/* STEPS */
+.steps {
+  display: flex;
+  gap: 0;
+  margin-bottom: 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.stepItem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 14px 8px;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  cursor: default;
+  transition: .2s;
+}
+
+.stepItem:last-child { border-right: none; }
+
+.stepActive {
+  background: rgba(200,255,0,0.08);
+  border-bottom: 2px solid var(--neon);
+}
+
+.stepDone {
+  background: rgba(200,255,0,0.05);
+  cursor: pointer;
+}
+
+.stepNum {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--border);
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.stepActive .stepNum {
+  background: var(--neon);
+  color: #000;
+}
+
+.stepDone .stepNum {
+  background: rgba(200,255,0,0.2);
+  color: var(--neon);
+}
+
+.stepLabel {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.stepActive .stepLabel { color: var(--neon); }
+
+/* CARD */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px 20px;
+  margin-bottom: 20px;
+}
+
+.stepContent {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cardTitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--text);
+}
+
+/* FORM */
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .8px;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 480px) {
+  .row2 { grid-template-columns: 1fr; }
+}
+
+/* TEAMS */
+.teamsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 480px) {
+  .teamsRow { grid-template-columns: 1fr; }
+}
+
+.teamBox {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.teamName {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.teamCount {
+  font-size: 12px;
+  color: var(--muted);
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+}
+
+.playerInputRow {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.playerInputRow input { flex: 1; }
+
+.addBtn {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: var(--neon);
+  color: #000;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.playerList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.playerItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 6px 10px;
+}
+
+.playerNum {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 700;
+  min-width: 16px;
+}
+
+.playerName {
+  flex: 1;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.removeBtn {
+  background: transparent;
+  border: none;
+  color: var(--pink);
+  font-size: 18px;
+  line-height: 1;
+  padding: 0;
+}
+
+/* TOSS */
+.tossTeams {
+  display: flex;
+  gap: 10px;
+}
+
+.tossBtn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1.5px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  font-family: 'Barlow', sans-serif;
+  transition: .15s;
+}
+
+.tossBtn:hover { border-color: var(--neon); color: var(--neon); }
+
+.tossSel {
+  background: var(--neon);
+  color: #000;
+  border-color: var(--neon);
+}
+
+.tossResult {
+  background: rgba(200,255,0,0.06);
+  border: 1px solid rgba(200,255,0,0.2);
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* BUTTONS */
+.navBtns {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.nextBtn {
+  flex: 1;
+  padding: 13px;
+  background: var(--neon);
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Barlow', sans-serif;
+}
+
+.nextBtn:hover { background: #d8ff20; }
+
+.backBtn {
+  padding: 13px 20px;
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Barlow', sans-serif;
+}
+
+.backBtn:hover { border-color: var(--neon); color: var(--neon); }
+
+.startBtn {
+  flex: 1;
+  padding: 13px;
+  background: linear-gradient(135deg, #c8ff00, #80cc00);
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Barlow', sans-serif;
+}
+
+.startBtn:disabled { opacity: .6; cursor: not-allowed; }
+
+/* VIEW BY CODE */
+.viewCode {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.viewCode p {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.codeInputRow {
+  display: flex;
+  gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.viewBtn {
+  padding: 10px 20px;
+  background: var(--neon);
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Barlow', sans-serif;
+  flex-shrink: 0;
+}

@@ -14,6 +14,7 @@ app.use(express.json());
 
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/matches", require("./routes/matchRoutes"));
+app.use("/api/scorecard", require("./routes/scorecardRoutes"));
 
 app.get("/", (req, res) => {
   res.json({ message: "GullyHunt API is running 🏏" });
@@ -23,3 +24,4 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
