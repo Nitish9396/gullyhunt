@@ -7,6 +7,7 @@
 }
 
 :root {
+  /* Dark theme tokens — still used by app pages (Find, Post, Profile, etc.) */
   --bg: #0a0a0f;
   --bg2: #111118;
   --bg3: #1a1a24;
@@ -21,6 +22,19 @@
   --text: #f0f0f8;
   --muted: #888899;
   --radius: 12px;
+
+  /* Light theme tokens — used by the new marketing Home page */
+  --lt-bg: #ffffff;
+  --lt-bg-soft: #f7f8fb;
+  --lt-surface: #ffffff;
+  --lt-border: #e7e9ef;
+  --lt-navy: #14213d;
+  --lt-navy-soft: #4a5573;
+  --lt-orange: #ff7a1a;
+  --lt-orange-dark: #e8650a;
+  --lt-lime: #c8ff00;
+  --lt-lime-dark: #6b9c00;
+  --lt-muted: #6b7280;
 }
 
 html {
@@ -33,6 +47,11 @@ body {
   font-family: 'Barlow', sans-serif;
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+body.light-theme {
+  background: var(--lt-bg);
+  color: var(--lt-navy);
 }
 
 ::-webkit-scrollbar { width: 6px; }

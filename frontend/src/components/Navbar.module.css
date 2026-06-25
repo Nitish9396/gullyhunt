@@ -12,6 +12,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: background .2s, border-color .2s;
+}
+
+.navLight {
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid var(--lt-border);
 }
 
 .logo {
@@ -20,11 +26,45 @@
   font-size: 26px;
   color: var(--neon);
   letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navLight .logo { color: var(--lt-orange); }
+
+.logoMark {
+  display: inline-flex;
+  width: 26px;
+  height: 26px;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo span {
   color: var(--text);
 }
+
+.navLight .logo span { color: var(--lt-navy); }
+
+.links {
+  display: none;
+  align-items: center;
+  gap: 28px;
+}
+
+@media (min-width: 900px) {
+  .links { display: flex; }
+}
+
+.navLink {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--lt-navy-soft);
+  transition: color .15s;
+}
+
+.navLink:hover { color: var(--lt-orange); }
 
 .right {
   display: flex;
@@ -32,11 +72,33 @@
   align-items: center;
 }
 
+.searchBtn {
+  display: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid var(--lt-border);
+  color: var(--lt-navy);
+  cursor: pointer;
+  transition: .15s;
+}
+
+@media (min-width: 600px) {
+  .searchBtn { display: flex; }
+}
+
+.searchBtn:hover { border-color: var(--lt-orange); color: var(--lt-orange); }
+
 .welcome {
   font-size: 13px;
   color: var(--muted);
   font-weight: 600;
 }
+
+.navLight .welcome { color: var(--lt-muted); }
 
 @media (max-width: 400px) {
   .welcome { display: none; }
@@ -62,6 +124,16 @@
   border-color: var(--neon);
 }
 
+.navLight .ghost {
+  color: var(--lt-navy);
+  border: 1px solid var(--lt-border);
+}
+
+.navLight .ghost:hover {
+  color: var(--lt-orange);
+  border-color: var(--lt-orange);
+}
+
 .primary {
   background: var(--neon);
   color: #000;
@@ -70,4 +142,13 @@
 
 .primary:hover {
   background: #c8ff00;
+}
+
+.navLight .primary {
+  background: var(--lt-orange);
+  color: #fff;
+}
+
+.navLight .primary:hover {
+  background: var(--lt-orange-dark);
 }
